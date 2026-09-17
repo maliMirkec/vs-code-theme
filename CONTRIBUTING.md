@@ -4,7 +4,7 @@ Thanks for helping improve Cita Theme.
 
 ## Setup
 
-Requires Node.js 22 (see `.nvmrc`). Building the themes needs no dependencies. Only the README image script needs `npm install`.
+Requires Node.js 22 (see `.nvmrc`). Building the themes needs no dependencies. Only the icon and README image scripts need `npm install`.
 
 ```sh
 git clone https://github.com/maliMirkec/cita-theme.git
@@ -21,7 +21,8 @@ The files in `themes/` are generated, so don't edit them by hand. Edit these ins
 | `src/palette.mjs` | Brand colors and the palette for each theme |
 | `src/template.mjs` | Which palette color each part of VS Code uses: workbench, TextMate scopes, and semantic tokens |
 | `src/build.mjs` | Writes `themes/*.json` and runs WCAG contrast checks |
-| `src/icon.mjs` | Draws `icon.png` |
+| `src/icon.svg` | The silvestar.codes footer logo, used as the extension icon |
+| `src/icon.mjs` | Renders `src/icon.svg` to `icon.png` |
 | `src/screenshots.mjs` | Renders `images/*.png` for the README |
 
 `npm run build` fails if any syntax color drops below 4.5:1 contrast against the editor background (3.5:1 for comments), or if UI text such as buttons, badges, and the status bar drops below 4.5:1.

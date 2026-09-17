@@ -7,9 +7,9 @@ export function buildTheme(p) {
   const isDark = p.type === 'dark';
   const s = p.syntax;
 
-  // Light variant uses a navy status bar to pair with the navy activity bar.
-  const statusBarBg = isDark ? p.bgDeep : brand.gamma;
-  const statusBarFg = isDark ? p.fgMuted : brand.light;
+  // Light variant uses a light mint status bar to pair with the light mint activity bar.
+  const statusBarBg = isDark ? p.bgDeep : brand.alphaLight;
+  const statusBarFg = isDark ? p.fgMuted : brand.gamma;
 
   const colors = {
     // Base
@@ -50,11 +50,11 @@ export function buildTheme(p) {
     'activityBar.background': p.activityBarBg,
     'activityBar.foreground': p.activityBarFg,
     'activityBar.inactiveForeground': a(p.activityBarFg, '80'),
-    'activityBar.border': isDark ? p.border : p.activityBarBg,
+    'activityBar.border': p.border,
     'activityBar.activeBorder': p.activityBarIndicator,
-    'activityBar.activeBackground': '#FFFFFF14',
-    'activityBarBadge.background': brand.alpha,
-    'activityBarBadge.foreground': brand.gamma,
+    'activityBar.activeBackground': isDark ? '#FFFFFF14' : '#0439710F',
+    'activityBarBadge.background': isDark ? brand.alpha : brand.gamma,
+    'activityBarBadge.foreground': isDark ? brand.gamma : brand.light,
     'activityBarTop.foreground': p.fg,
     'activityBarTop.inactiveForeground': p.fgSubtle,
     'activityBarTop.activeBorder': isDark ? brand.alpha : brand.gamma,
@@ -321,18 +321,18 @@ export function buildTheme(p) {
     // Status bar
     'statusBar.background': statusBarBg,
     'statusBar.foreground': statusBarFg,
-    'statusBar.border': isDark ? p.border : statusBarBg,
+    'statusBar.border': p.border,
     'statusBar.debuggingBackground': p.secondary,
     'statusBar.debuggingForeground': p.secondaryFg,
     'statusBar.debuggingBorder': p.secondary,
     'statusBar.noFolderBackground': isDark ? p.bgHighlight : '#06447F',
     'statusBar.noFolderForeground': isDark ? p.fg : brand.light,
-    'statusBarItem.hoverBackground': '#FFFFFF1F',
-    'statusBarItem.activeBackground': '#FFFFFF2E',
-    'statusBarItem.remoteBackground': brand.alpha,
-    'statusBarItem.remoteForeground': brand.gamma,
-    'statusBarItem.prominentBackground': a(brand.alpha, '33'),
-    'statusBarItem.prominentHoverBackground': a(brand.alpha, '4D'),
+    'statusBarItem.hoverBackground': isDark ? '#FFFFFF1F' : '#0439711F',
+    'statusBarItem.activeBackground': isDark ? '#FFFFFF2E' : '#0439712E',
+    'statusBarItem.remoteBackground': isDark ? brand.alpha : brand.gamma,
+    'statusBarItem.remoteForeground': isDark ? brand.gamma : brand.light,
+    'statusBarItem.prominentBackground': isDark ? a(brand.alpha, '33') : a(brand.gamma, '14'),
+    'statusBarItem.prominentHoverBackground': isDark ? a(brand.alpha, '4D') : a(brand.gamma, '24'),
     'statusBarItem.errorBackground': p.secondary,
     'statusBarItem.errorForeground': p.secondaryFg,
     'statusBarItem.warningBackground': '#FFD27A',

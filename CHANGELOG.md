@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- Cita Light uses light mint (`#E0FCF3`) for the activity bar and status bar.
+- The extension icon is now the silvestar.codes logo.
+
 ## [0.1.0] - 2026-09-17
 
 ### Added

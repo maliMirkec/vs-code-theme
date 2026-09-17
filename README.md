@@ -23,7 +23,7 @@ A deep navy editor (`#02264D`) with the site's navy (`#043A73`) for the current 
 
 ### Cita Light
 
-A white editor with navy text, a navy activity bar and status bar, and darker versions of mint and pink that are readable on white.
+A white editor with navy text, a light mint activity bar and status bar, and darker versions of mint and pink that are readable on white.
 
 ![Cita Light](images/cita-light.png)
 

@@ -252,19 +252,19 @@ function renderShot({ theme, sample, lang, selection, out: file }, highlighter) 
   const str = ratio(theme.tokenColors.find((r) => r.name === 'Strings').settings.foreground);
   const themeFile = file.replace('.png', '-color-theme.json');
   const term = [
-    [['~/cita-theme', ansi('Blue')], [' on ', c['terminal.foreground']], ['master', ansi('Magenta')], [' ❯ ', ansi('Green')], ['npm run build', c['terminal.foreground']]],
+    [['~/cita-theme', ansi('Blue')], [' on ', c['terminal.foreground']], ['main', ansi('Magenta')], [' ❯ ', ansi('Green')], ['npm run build', c['terminal.foreground']]],
     [['  ✓ ', ansi('Green')], ['syntax: keyword     ', c['terminal.foreground']], [kw, ansi('Yellow')], [' (min 4.5)', ansi('BrightBlack')]],
     [['  ✓ ', ansi('Green')], ['syntax: string      ', c['terminal.foreground']], [str, ansi('Yellow')], [' (min 4.5)', ansi('BrightBlack')]],
     [['  → ', ansi('Cyan')], [`themes/${themeFile}`, c['terminal.foreground']]],
     [['All contrast checks passed.', ansi('Green')]],
-    [['~/cita-theme', ansi('Blue')], [' on ', c['terminal.foreground']], ['master', ansi('Magenta')], [' ❯ ', ansi('Green')]],
+    [['~/cita-theme', ansi('Blue')], [' on ', c['terminal.foreground']], ['main', ansi('Magenta')], [' ❯ ', ansi('Green')]],
   ];
   term.forEach((parts, i) => {
     const y = panelY + 54 + i * 18;
     const spans = parts.map(([s, col]) => `<tspan ${paint(col)}>${esc(nbsp(s))}</tspan>`).join('');
     out.push(`<text x="${editorX + 20}" y="${y}" font-family="${MONO}" font-size="12">${spans}</text>`);
   });
-  const lastLen = '~/cita-theme on master ❯ '.length;
+  const lastLen = '~/cita-theme on main ❯ '.length;
   out.push(rect(editorX + 20 + lastLen * 12 * 0.602, panelY + 54 + 5 * 18 - 12, 7, 15, c['terminalCursor.foreground']));
 
   // Status bar
@@ -276,7 +276,7 @@ function renderShot({ theme, sample, lang, selection, out: file }, highlighter) 
   const sbFg = c['statusBar.foreground'];
   const sbStroke = `${paint(sbFg, 'stroke')} stroke-width="1.2" fill="none" stroke-linecap="round"`;
   out.push(`<circle cx="52" cy="${sbY + 7}" r="1.8" ${sbStroke}/><circle cx="52" cy="${sbY + 16}" r="1.8" ${sbStroke}/><circle cx="59" cy="${sbY + 9}" r="1.8" ${sbStroke}/><path d="M52 ${sbY + 9}v5 M59 ${sbY + 11}c0 3-7 2-7 3" ${sbStroke}/>`);
-  out.push(text(66, sbY + 15, 'master*', sbFg, { size: 12 }));
+  out.push(text(66, sbY + 15, 'main*', sbFg, { size: 12 }));
   out.push(`<circle cx="130" cy="${sbY + 11}" r="5" ${sbStroke}/><path d="M128 ${sbY + 9}l4 4 M132 ${sbY + 9}l-4 4" ${sbStroke}/>`);
   out.push(text(140, sbY + 15, '0', sbFg, { size: 12 }));
   out.push(`<path d="M160 ${sbY + 5}l6 11h-12z M160 ${sbY + 9}v3" ${sbStroke} stroke-linejoin="round"/>`);

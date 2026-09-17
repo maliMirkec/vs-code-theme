@@ -1,6 +1,7 @@
 // Brand colors from https://www.silvestar.codes (css/style-2024.css).
 export const brand = {
   alpha: '#63F2C5', // mint
+  alphaLight: '#E0FCF3', // light mint: 20% mint mixed with white (scrollbar track)
   alphaStrong: '#12E09F', // theme-color
   beta: '#FF3366', // pink
   gamma: '#043A73', // navy
@@ -115,9 +116,9 @@ export const light = {
   findMatch: '#FF336659',
   findMatchHighlight: '#FF336629',
   lineHighlight: '#0439710F',
-  activityBarBg: brand.gamma,
-  activityBarFg: brand.light,
-  activityBarIndicator: brand.alpha,
+  activityBarBg: brand.alphaLight,
+  activityBarFg: brand.gamma,
+  activityBarIndicator: brand.gamma,
 
   // Status
   error: '#D1124A',
