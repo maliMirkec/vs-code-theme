@@ -1,7 +1,7 @@
 # Cita Theme
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/starbist.cita-theme?label=Marketplace&color=043A73)](https://marketplace.visualstudio.com/items?itemName=starbist.cita-theme)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/starbist.cita-theme?color=63F2C5)](https://marketplace.visualstudio.com/items?itemName=starbist.cita-theme)
+[![VS Code Marketplace](https://vsmarketplacebadges.dev/version-short/starbist.cita-theme.svg?label=Marketplace&color=043A73)](https://marketplace.visualstudio.com/items?itemName=starbist.cita-theme)
+[![Installs](https://vsmarketplacebadges.dev/installs-short/starbist.cita-theme.svg?label=Installs&color=63F2C5)](https://marketplace.visualstudio.com/items?itemName=starbist.cita-theme)
 [![Open VSX](https://img.shields.io/open-vsx/v/starbist/cita-theme?label=Open%20VSX&color=FF3366)](https://open-vsx.org/extension/starbist/cita-theme)
 [![CI](https://github.com/maliMirkec/cita-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/maliMirkec/cita-theme/actions/workflows/ci.yml)
 
