@@ -1,0 +1,42 @@
+name: Color issue
+description: Something looks wrong, unreadable, or unstyled
+labels: [bug]
+body:
+  - type: dropdown
+    id: variant
+    attributes:
+      label: Theme
+      options:
+        - Cita Dark
+        - Cita Light
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What looks wrong?
+      description: Which part of the editor, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag an image here. Screenshots help a lot for color issues.
+  - type: input
+    id: language
+    attributes:
+      label: Language / file type
+      placeholder: e.g. TypeScript, Markdown, SCSS
+  - type: textarea
+    id: scopes
+    attributes:
+      label: Token scopes (optional)
+      description: Run "Developer: Inspect Editor Tokens and Scopes" on the affected text and paste the result.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: VS Code version
+      placeholder: Help → About

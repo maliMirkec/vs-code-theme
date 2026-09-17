@@ -1,0 +1,14 @@
+name: Suggestion
+description: Support for a language, extension, or UI element
+labels: [enhancement]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Screenshots or examples

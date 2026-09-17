@@ -1,0 +1,14 @@
+.github/**
+.vscode/**
+src/**
+samples/**
+node_modules/**
+*.vsix
+.editorconfig
+.gitattributes
+.gitignore
+.nvmrc
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+images/**
+package-lock.json

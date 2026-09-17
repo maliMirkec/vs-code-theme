@@ -1,0 +1,13 @@
+{
+  "name": "Cita",
+  "version": 1,
+  "public": true,
+  "colors": {
+    "alpha": "#63F2C5",
+    "shades": {
+      "light": "#9BF7DA",
+      "dark": null
+    }
+  },
+  "tags": ["mint", "pink", "navy"]
+}

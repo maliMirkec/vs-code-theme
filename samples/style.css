@@ -1,0 +1,29 @@
+@import url('reset.css');
+
+:root {
+  --color-alpha: #63f2c5;
+  --color-beta: #ff3366;
+  --color-gamma: #043a73;
+  --size-10-20: clamp(0.625rem, calc(0rem + 1vw), 1.25rem);
+}
+
+/* Call to action */
+.cta,
+[class*="cta--"]:is(:hover, :focus-visible) {
+  background-image: linear-gradient(to right, var(--color-alpha) 40%, #fff 400%);
+  color: var(--color-gamma);
+  padding: var(--size-10-20) 2em;
+  border-radius: 0.25em !important;
+  transition: all 222ms ease-in-out;
+}
+
+.article > p::first-letter {
+  font-size: 200%;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-gamma);
+    color: white;
+  }
+}
