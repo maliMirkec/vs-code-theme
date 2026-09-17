@@ -4,6 +4,8 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-09-17
+
 ### Changed
 
 - Cita Light uses light mint (`#E0FCF3`) for the activity bar and status bar.
@@ -17,5 +19,6 @@ All notable changes to this project are documented here. The format follows [Kee
 - Workbench colors, TextMate token colors, and semantic token colors.
 - WCAG contrast checks in the build.
 
-[Unreleased]: https://github.com/maliMirkec/cita-theme/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/maliMirkec/cita-theme/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/maliMirkec/cita-theme/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/maliMirkec/cita-theme/releases/tag/v0.1.0
