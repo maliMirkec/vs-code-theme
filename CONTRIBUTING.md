@@ -7,8 +7,8 @@ Thanks for helping improve Cita Theme.
 Requires Node.js 22 (see `.nvmrc`). Building the themes needs no dependencies. Only the icon and README image scripts need `npm install`.
 
 ```sh
-git clone https://github.com/maliMirkec/cita-theme.git
-cd cita-theme
+git clone https://github.com/maliMirkec/vs-code-theme.git
+cd vs-code-theme
 npm run build
 ```
 

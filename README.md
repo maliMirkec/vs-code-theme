@@ -3,7 +3,7 @@
 [![VS Code Marketplace](https://vsmarketplacebadges.dev/version-short/starbist.cita-theme.svg?label=Marketplace&color=043A73)](https://marketplace.visualstudio.com/items?itemName=starbist.cita-theme)
 [![Installs](https://vsmarketplacebadges.dev/installs-short/starbist.cita-theme.svg?label=Installs&color=63F2C5)](https://marketplace.visualstudio.com/items?itemName=starbist.cita-theme)
 [![Open VSX](https://img.shields.io/open-vsx/v/starbist/cita-theme?label=Open%20VSX&color=FF3366)](https://open-vsx.org/extension/starbist/cita-theme)
-[![CI](https://github.com/maliMirkec/cita-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/maliMirkec/cita-theme/actions/workflows/ci.yml)
+[![CI](https://github.com/maliMirkec/vs-code-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/maliMirkec/vs-code-theme/actions/workflows/ci.yml)
 
 Light and dark VS Code themes based on the colors of [silvestar.codes](https://www.silvestar.codes).
 
@@ -48,7 +48,7 @@ To switch automatically with your OS appearance, add this to your settings:
 
 ## Contributing
 
-Found a color that's hard to read or a language that looks unstyled? [Open an issue](https://github.com/maliMirkec/cita-theme/issues/new/choose). See [CONTRIBUTING.md](CONTRIBUTING.md) for how the theme is built.
+Found a color that's hard to read or a language that looks unstyled? [Open an issue](https://github.com/maliMirkec/vs-code-theme/issues/new/choose). See [CONTRIBUTING.md](CONTRIBUTING.md) for how the theme is built.
 
 ## License
 

@@ -17,11 +17,11 @@
   ],
   "homepage": "https://www.silvestar.codes",
   "bugs": {
-    "url": "https://github.com/maliMirkec/cita-theme/issues"
+    "url": "https://github.com/maliMirkec/vs-code-theme/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maliMirkec/cita-theme.git"
+    "url": "git+https://github.com/maliMirkec/vs-code-theme.git"
   },
   "license": "MIT",
   "scripts": {
