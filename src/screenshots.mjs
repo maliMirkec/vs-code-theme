@@ -98,7 +98,7 @@ function renderShot({ theme, sample, lang, selection, out: file }, highlighter) 
   out.push(rect(0, TITLE_H - 1, W, 1, c['titleBar.border']));
   ['#FF5F57', '#FEBC2E', '#28C840'].forEach((dot, i) => out.push(`<circle cx="${18 + i * 20}" cy="15" r="6" fill="${dot}"/>`));
   out.push(rect(W / 2 - 170, 5, 340, 20, c['commandCenter.background'], `rx="5" ${paint(c['commandCenter.border'], 'stroke')}`));
-  out.push(text(W / 2, 19, 'cita-theme', c['commandCenter.foreground'], { size: 12, anchor: 'middle' }));
+  out.push(text(W / 2, 19, 'vs-code-theme', c['commandCenter.foreground'], { size: 12, anchor: 'middle' }));
 
   // Activity bar
   out.push(rect(0, bodyY, ACTIVITY_W, bodyH, c['activityBar.background']));
@@ -126,7 +126,7 @@ function renderShot({ theme, sample, lang, selection, out: file }, highlighter) 
   out.push(rect(ACTIVITY_W, bodyY, SIDEBAR_W, bodyH, c['sideBar.background']));
   out.push(rect(editorX - 1, bodyY, 1, bodyH, c['sideBar.border']));
   out.push(text(ACTIVITY_W + 20, bodyY + 23, 'EXPLORER', c['sideBarTitle.foreground'], { size: 11 }));
-  out.push(text(ACTIVITY_W + 12, bodyY + 50, '⌄  CITA-THEME', c['sideBarSectionHeader.foreground'], { size: 11, weight: 700 }));
+  out.push(text(ACTIVITY_W + 12, bodyY + 50, '⌄  VS-CODE-THEME', c['sideBarSectionHeader.foreground'], { size: 11, weight: 700 }));
   const tree = [
     { depth: 0, label: '›  .github' },
     { depth: 0, label: '⌄  samples', git: 'modified' },
@@ -252,19 +252,19 @@ function renderShot({ theme, sample, lang, selection, out: file }, highlighter) 
   const str = ratio(theme.tokenColors.find((r) => r.name === 'Strings').settings.foreground);
   const themeFile = file.replace('.png', '-color-theme.json');
   const term = [
-    [['~/cita-theme', ansi('Blue')], [' on ', c['terminal.foreground']], ['main', ansi('Magenta')], [' ❯ ', ansi('Green')], ['npm run build', c['terminal.foreground']]],
+    [['~/vs-code-theme', ansi('Blue')], [' on ', c['terminal.foreground']], ['main', ansi('Magenta')], [' ❯ ', ansi('Green')], ['npm run build', c['terminal.foreground']]],
     [['  ✓ ', ansi('Green')], ['syntax: keyword     ', c['terminal.foreground']], [kw, ansi('Yellow')], [' (min 4.5)', ansi('BrightBlack')]],
     [['  ✓ ', ansi('Green')], ['syntax: string      ', c['terminal.foreground']], [str, ansi('Yellow')], [' (min 4.5)', ansi('BrightBlack')]],
     [['  → ', ansi('Cyan')], [`themes/${themeFile}`, c['terminal.foreground']]],
     [['All contrast checks passed.', ansi('Green')]],
-    [['~/cita-theme', ansi('Blue')], [' on ', c['terminal.foreground']], ['main', ansi('Magenta')], [' ❯ ', ansi('Green')]],
+    [['~/vs-code-theme', ansi('Blue')], [' on ', c['terminal.foreground']], ['main', ansi('Magenta')], [' ❯ ', ansi('Green')]],
   ];
   term.forEach((parts, i) => {
     const y = panelY + 54 + i * 18;
     const spans = parts.map(([s, col]) => `<tspan ${paint(col)}>${esc(nbsp(s))}</tspan>`).join('');
     out.push(`<text x="${editorX + 20}" y="${y}" font-family="${MONO}" font-size="12">${spans}</text>`);
   });
-  const lastLen = '~/cita-theme on main ❯ '.length;
+  const lastLen = '~/vs-code-theme on main ❯ '.length;
   out.push(rect(editorX + 20 + lastLen * 12 * 0.602, panelY + 54 + 5 * 18 - 12, 7, 15, c['terminalCursor.foreground']));
 
   // Status bar
